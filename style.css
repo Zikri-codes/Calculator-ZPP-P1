@@ -1,0 +1,119 @@
+/* lonely root :( */
+:root {--color-orange: #ff7433;}
+/* lonely root :( */
+
+/* reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: monospace;
+}
+/* reset */
+
+/* body */
+body {
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  transition: all .3s;
+}
+
+.dark-mode {
+  background-color: black;
+}
+/* body */
+
+/* calculator */
+.calculator {
+  background: none;
+  width: 25em;
+  display: flex;
+  flex-direction: column;
+  padding: 1em;
+  border-radius: 10px;
+  box-shadow: 0 0px 10px rgba(0, 0, 0, 0.1);
+  transition: all .3s;
+}
+
+.dark-mode .calculator {box-shadow: 0 0px 10px rgba(255, 255, 255, 0.1);}
+/* calculator */
+
+/* display */
+#display {
+  background: none;
+  color: black;
+  width: 100%;
+  height: 3em;
+  margin-bottom: 1em;
+  padding: 0 0.5em;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #00000010;
+  text-align: right;
+  font-size: 2.5em;
+  font-weight: bold;
+  transition: all .3s;
+}
+
+.dark-mode #display {
+  border-bottom: 1px solid #ffffff10;
+  color: white;
+}
+/* display */
+
+/* dark mode animation */
+.material-symbols-outlined {display: inline-block;}
+.fadeOut {animation: fadeOut .3s forwards;}
+.fadeIn {animation: fadeIn .3s forwards;}
+/* dark mode animation */
+
+/* keyframes */
+@keyframes fadeOut {
+  from { opacity: 1; transform: rotate(0deg) scale(1); }
+  to { opacity: 0; transform: rotate(180deg) scale(0); }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: rotate(-180deg) scale(0); }
+  to { opacity: 1; transform: rotate(0deg) scale(1); }
+}
+/* keyframes */
+
+/* buttons grid */
+.button {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: 1fr; /* tinggi row otomatis sesuai width cell */
+  gap: 0.5em;
+  width: 100%;
+  height: auto;
+}
+
+/* button gng*/
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  padding: 0;
+  box-sizing: border-box;
+  background: none;
+  border: none;
+  outline: none;
+  font-weight: bold;
+  font-size: clamp(1em, 2vw, 1.5em);
+  transition: all .2s;
+}
+
+.btn:active {background-color: #00000010;transform: scale(0.9);}
+.dark-mode .btn:active {background-color: #ffffff30;}
+.dark-mode .btn {color: white;}
+.operator {color: var(--color-orange) !important;}
+.equals {color: white; background-color: var(--color-orange);}
+.equals:active {background-color: var(--color-orange) !important; transform: scale(0.8);}
+/* button gng*/
