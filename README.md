@@ -1,4 +1,4 @@
-# Calculator Zikri Practice Project 1 
+# Calculator Zikri Practice Project I 🧮
 
   ![HTML](https://img.shields.io/badge/HTML-orange?logo=html5&logoColor=white)
   ![CSS](https://img.shields.io/badge/CSS-blue?logo=css&logoColor=white)
