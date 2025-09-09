@@ -1,4 +1,7 @@
-# Calculator Zikri Practice Project I 🧮
+# Calculator ZPP-P1
+
+**ZPP** = Zikri Practice Project
+**P1** = Phase 1
 
   ![HTML](https://img.shields.io/badge/HTML-orange?logo=html5&logoColor=white)
   ![CSS](https://img.shields.io/badge/CSS-blue?logo=css&logoColor=white)
